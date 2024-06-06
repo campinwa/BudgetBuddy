@@ -17,13 +17,13 @@
       
       <div class="balance__total">
         <h1>Balance</h1>
-        <p><span class="pound">₹</span>&nbsp;{{ total }}</p>
+        <p><span class="pound">Rp.</span>&nbsp;{{ total }}</p>
       </div>
       
       <div class="balance__type balance__income">
         <div class="balance__group">
           <h2>Income</h2>
-          <p>₹ {{ inc }}</p>
+          <p>Rp. {{ inc }}</p>
         </div>
         <span class="material-icons">transit_enterexit</span>
       </div>
@@ -31,7 +31,7 @@
       <div class="balance__type balance__expense">
         <div class="balance__group">
           <h2>Expenses</h2>
-          <p>₹ {{ exp }}</p>
+          <p>Rp. {{ exp }}</p>
         </div>
         <span class="material-icons">transit_enterexit</span>
       </div>
@@ -116,7 +116,7 @@
       </div>
       
       <div class="type__amount">
-        <p :style=" {color: currentColor }">₹ {{ current }}</p>
+        <p :style=" {color: currentColor }">Rp. {{ current }}</p>
         <button class="type__add" @click="add" ><span class="material-icons">add_circle</span></button>
       </div>
     </div>
@@ -144,3 +144,4 @@
 
 </body>
 </html>
+
