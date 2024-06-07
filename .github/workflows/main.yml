@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [ develop ]
+    branches: [ develop_campin ]
   pull_request:
-    branches: [ develop ]
+    branches: [ develop_campin ]
   workflow_dispatch:
 
 jobs:
