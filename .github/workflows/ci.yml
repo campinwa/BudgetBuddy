@@ -1,6 +1,6 @@
 # .github/workflows/ci.yml
 
-name: CI Pipeline
+name: CI/CD Pipeline
 
 on:
   push:
