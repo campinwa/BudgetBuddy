@@ -1,5 +1,9 @@
 provider "google" {
+<<<<<<< HEAD
   project = "budgetbuddy" # Replace with your GCP project ID
+=======
+  project = "budget-buddy" # Replace with your GCP project ID
+>>>>>>> a17723edce917c1797ce1e80ad58f4518a0869f4
   region  = "us-west2"       # GCP region
 }
 
