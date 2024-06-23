@@ -67,11 +67,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+      #- name: Set up SSH
+        #run: |
+          #mkdir -p ~/.ssh
+          #echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          #chmod 600 ~/.ssh/id_rsa
 
       - name: Login to Docker Hub
         uses: docker/login-action@v2
@@ -84,19 +84,19 @@ jobs:
           docker build -t campinwaladsae/income-expense-app:latest .
           docker push campinwaladsae/income-expense-app:latest
 
-      - name: Deploy to Staging
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          HOST: ${{ secrets.STAGING_HOST }}
-          USER: ${{ secrets.SSH_USER }}
-        run: |
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $USER@$HOST << 'EOF'
-            if ! [ -x "$(command -v docker)" ]; then
-              curl -fsSL https://get.docker.com -o get-docker.sh
-              sh get-docker.sh
-            fi
-            sudo docker pull campinwaladsae/income-expense-app:latest
-            sudo docker stop income-expense-app || true
-            sudo docker rm income-expense-app || true
-            sudo docker run -d --name income-expense-app -p 5000:5000 campinwaladsae/income-expense-app:latest
-          EOF
+      # - name: Deploy to Staging
+      #  env:
+      #    SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+      #    HOST: ${{ secrets.STAGING_HOST }}
+      #    USER: ${{ secrets.SSH_USER }}
+        # run: |
+        #   ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $USER@$HOST << 'EOF'
+        #     if ! [ -x "$(command -v docker)" ]; then
+        #       curl -fsSL https://get.docker.com -o get-docker.sh
+        #       sh get-docker.sh
+        #     fi
+        #     sudo docker pull campinwaladsae/income-expense-app:latest
+        #     sudo docker stop income-expense-app || true
+        #     sudo docker rm income-expense-app || true
+        #     sudo docker run -d --name income-expense-app -p 5000:5000 campinwaladsae/income-expense-app:latest
+        #   EOF
