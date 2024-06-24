@@ -5,11 +5,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - develop_campin
+      - develop_siga
       - feature/*
   pull_request:
     branches:
-      - develop_campin
+      - develop_siga
 
 jobs:
   build:
