@@ -5,19 +5,11 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-<<<<<<< HEAD
-      - develop_campin
-      - feature/*
-  pull_request:
-    branches:
-      - develop_campin
-=======
       - main
       - feature/*
   pull_request:
     branches:
       - main
->>>>>>> 0782cffb1d69bf5e79a2b1d14240229559ea5186
 
 jobs:
   build:
