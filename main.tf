@@ -1,5 +1,5 @@
 provider "google" {
-  project = "BudgetBuddy" # Replace with your GCP project ID
+  project = "budgetbuddy" # Replace with your GCP project ID
   region  = "us-west2"       # GCP region
 }
 
@@ -31,7 +31,7 @@ resource "google_compute_instance" "app" {
     sudo systemctl start docker
     USERNAME=$(whoami)
     sudo usermod -aG docker $USERNAME
-    sudo -u $USERNAME docker run -d -p 80:5000 campinwa/income-expense-app
+    sudo -u $USERNAME docker run -d -p 80:5000 campinwaladsae/income-expense-app
   EOF
 }
 
