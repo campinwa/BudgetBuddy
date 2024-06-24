@@ -1,20 +1,21 @@
-version: '3.8'
+version: "3"
 
 services:
-  web:
+  app:
     build: .
+    image: campinwaladsae/income-expense-app:latest
     container_name: income-expense-app
     ports:
       - "5000:5000"
     volumes:
       - .:/app
     environment:
-      MYSQL_HOST: 'db'  # Use 'db' as MySQL host since it's the service name in Docker Compose
-      MYSQL_USER: 'root'  # Update with your MySQL username
-      MYSQL_PASSWORD: ''  # Update with your MySQL password
-      MYSQL_DB: 'income_expense_db'  # Update with your MySQL database name
+      MYSQL_HOST: "db" # Use 'db' as MySQL host since it's the service name in Docker Compose
+      MYSQL_USER: "root" # Update with your MySQL username
+      MYSQL_PASSWORD: "root_password" # Update with your MySQL password
+      MYSQL_DB: "income_expense_db" # Update with your MySQL database name
     depends_on:
-      - db  # Ensure 'web' service starts after 'db' service
+      - db # Ensure 'web' service starts after 'db' service
 
   db:
     image: mysql:5.7
@@ -35,5 +36,50 @@ services:
     ports:
       - "8080:80"
     environment:
-      PMA_HOST: db  # Use 'db' as MySQL host for phpMyAdmin to connect to MySQL
+      PMA_HOST: db # Use 'db' as MySQL host for phpMyAdmin to connect to MySQL
       MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: "admin"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+    ports:
+      - "9200:9200"
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.10.1
+    container_name: logstash
+    volumes:
+      - ./logstash-pipeline:/usr/share/logstash/pipeline
+    ports:
+      - "5001:5001"
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.1
+    container_name: kibana
+    ports:
+      - "5601:5601"
+
+volumes:
+  grafana-storage:
