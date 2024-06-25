@@ -1,8 +1,8 @@
 # BudgetBuddy
 
-Final Project mata kuliah Pengembangan Sistem dan Operasi (B).
+Final Project for Systems Development and Operations (B) course.
 
-Member :
+Members :
 - Campin Waladsae Adiena - 5026221050
 - Maurin Firsty Aulia - 5026211146
 - Moh Atlomasiga Hasan Zahrandy - 5026211049
@@ -21,7 +21,6 @@ Roles :
 BudgetBuddy is a comprehensive web application designed to empower individuals to manage their finances effectively. 
 
 Key Features :
-
 - Expense Tracking: Record and monitor your daily expenses with ease.
 - Income Tracking: Record and monitor your income sources.
 - Daily Reports: Generate detailed Expense and Income reports with Total Balance.
