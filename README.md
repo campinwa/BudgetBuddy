@@ -11,3 +11,19 @@ Anggota :
 
   ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/83eca3e1-52b1-4c35-a5b3-098b6a5114c0)
 
+
+Requirements :
+- Flask>=2.0.0
+- pytest==6.2.4
+- Werkzeug>=2.0
+- flask-mysqldb
+- apscheduler
+
+CI : Github Action
+
+CD : Docker
+
+Cloud : Google Cloud Project
+
+
+
