@@ -2,9 +2,7 @@
 
 Final Project mata kuliah Pengembangan Sistem dan Operasi (B).
 
-Plan : Membuat aplikasi Budgetting
-
-Anggota :
+Member :
 - Campin Waladsae Adiena - 5026221050
 - Maurin Firsty Aulia - 5026211146
 - Moh Atlomasiga Hasan Zahrandy - 5026211049
@@ -12,8 +10,21 @@ Anggota :
   ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/83eca3e1-52b1-4c35-a5b3-098b6a5114c0)
 
 
+Roles :
+- Campin :
+- Building Code
+- Code Review
+- Testing
+- All Initial Settings Tools
 
-  BudgetBuddy adalah aplikasi web yang dirancang untuk membantu pengguna mengelola keuangan mereka.
+
+BudgetBuddy is a comprehensive web application designed to empower individuals to manage their finances effectively. 
+
+Key Features :
+
+- Expense Tracking: Record and monitor your daily expenses with ease.
+- Income Tracking: Record and monitor your income sources.
+- Daily Reports: Generate detailed Expense and Income reports with Total Balance.
 
 
 Requirements :
@@ -32,9 +43,7 @@ CD : Docker
 
 
 Cloud : Google Cloud Project
-![image](https://github.com/campinwa/budgetbuddy/assets/166111616/0d7b09bd-cb11-40ee-8f53-df255184d05c)
-
-Monitoring : Prometheus
+![image](https://github.com/campinwa/budgetbuddy/assets/166111616/73520e7f-b2da-4a11-8a34-587123aba0be)
 
 Database : MySQL PHPmyadmin
 
