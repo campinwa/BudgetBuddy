@@ -24,10 +24,15 @@ Requirements :
 - apscheduler
 
 CI : Github Action
+![image](https://github.com/campinwa/budgetbuddy/assets/166111616/dc790f1e-332f-46f8-90fa-f91c3cc94324)
+
 
 CD : Docker
+![image](https://github.com/campinwa/budgetbuddy/assets/166111616/8492baa9-7371-4a70-a4de-392ef67288ef)
+
 
 Cloud : Google Cloud Project
+![image](https://github.com/campinwa/budgetbuddy/assets/166111616/0d7b09bd-cb11-40ee-8f53-df255184d05c)
 
 Monitoring : Prometheus
 
@@ -35,9 +40,7 @@ Database : MySQL PHPmyadmin
 
 ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/16245329-8bf2-490d-8701-eac4a0efaa65)
 
-Google Cloud 
 
-![image](https://github.com/campinwa/budgetbuddy/assets/166111616/0d7b09bd-cb11-40ee-8f53-df255184d05c)
 
 To run locally:
 
