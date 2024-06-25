@@ -1,7 +1,9 @@
 # BudgetBuddy
 
 Final Project for Systems Development and Operations (B) course.
+<br>
 
+**Objectives:**
 <p>The primary objective of this project is to immerse students in the practical aspects of DevOps, MLOps, or SecOps by providing them with hands-on experience. Students will gain expertise in automating and refining key processes such as software development, integration, testing, and deployment, as well as in the end-to-end development and deployment of machine learning models</p>
 
 <p>The objective of this project is to empower students with a comprehensive understanding and practical skills in designing, implementing, and managing Continuous Integration and Continuous Deployment (CI/CD) pipelines. Through this hands-on experience, students will learn how CI/CD pipelines are instrumental in automating and streamlining the processes of building, testing, and deploying software and machine learning models. They will explore the critical role these pipelines play in accelerating the development lifecycle, ensuring that code changes are integrated and tested frequently, and deployed reliably. By mastering CI/CD practices, students will be equipped to create workflows that automate quality assurance and deployment processes, enabling rapid and safe delivery of updates and features. </p>
