@@ -108,3 +108,22 @@ $ docker push <username>/income-expense-app
 
 ```
 
+Project Timeline:
+
+Week 1 : 28 Mei-31 Mei
+
+<img width="1440" alt="Screenshot 2024-06-25 at 23 02 20" src="https://github.com/campinwa/budgetbuddy/assets/67356728/68aed2e3-15ec-4277-b618-2da4b066d235">
+
+Week 2 : 1 Juni -7 Juni
+
+<img width="1440" alt="Screenshot 2024-06-25 at 23 03 40" src="https://github.com/campinwa/budgetbuddy/assets/67356728/6cdff463-f604-491d-9fdf-958b24882874">
+
+Week 3 : 8 Juni - 14 Juni
+
+<img width="1440" alt="Screenshot 2024-06-25 at 23 05 46" src="https://github.com/campinwa/budgetbuddy/assets/67356728/04114fe0-8c67-40f0-8603-ac5027ef4921">
+
+Week 4 : 15 Juni - 26 Juni
+
+<img width="1440" alt="Screenshot 2024-06-25 at 23 07 25" src="https://github.com/campinwa/budgetbuddy/assets/67356728/72352d5f-a679-4039-aa9c-c2f6df293ccf">
+
+
