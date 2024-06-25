@@ -35,6 +35,7 @@ Final Project for Systems Development and Operations (B) course.
 </ul>
 
 **ABOUT BUDGETBUDDY**
+
 **BudgetBuddy is a comprehensive web application designed to empower individuals to manage their finances effectively.** 
 
 **Key Features :**
