@@ -11,12 +11,28 @@ Members :
 
 
 Roles :
-- Campin :
-- Building Code
-- Code Review
-- Testing
-- All Initial Settings Tools
-
+<ul>
+<li>Campin :</li>
+  <ul>
+    <li>Building Code</li>
+    <li>Code Review</li>
+    <li>Testing</li>
+    <li>All Initial Settings Tools</li>
+    </ul>
+<li>Maurin :</li>
+  <ul>
+    <li>Building Code</li>
+    <li>Front End</li>
+    <li>Code Review</li>
+    <li>Testing</li>
+    </ul>
+  <li>Siga :</li>
+  <ul>
+    <li>Building Code</li>
+    <li>Front End</li>
+    <li>Back End</li>
+    </ul>
+</ul>
 
 BudgetBuddy is a comprehensive web application designed to empower individuals to manage their finances effectively. 
 
