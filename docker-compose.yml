@@ -3,10 +3,10 @@ version: "3"
 services:
   app:
     build: .
-    image: campinwaladsae/income-expense-app:latest
+    image: maurinfirsty/income-expense-app:latest
     container_name: income-expense-app
     ports:
-      - "5000:5000"
+      - "5002:5002"
     volumes:
       - .:/app
     environment:
