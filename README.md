@@ -2,7 +2,7 @@
 
 Final Project for Systems Development and Operations (B) course.
 
-Members :
+**Members :**
 - Campin Waladsae Adiena - 5026221050
 - Maurin Firsty Aulia - 5026211146
 - Moh Atlomasiga Hasan Zahrandy - 5026211049
@@ -10,7 +10,7 @@ Members :
   ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/83eca3e1-52b1-4c35-a5b3-098b6a5114c0)
 
 
-Roles :
+**Roles :**
 <ul>
 <li>Campin :</li>
   <ul>
@@ -34,33 +34,34 @@ Roles :
     </ul>
 </ul>
 
-BudgetBuddy is a comprehensive web application designed to empower individuals to manage their finances effectively. 
+**ABOUT BUDGETBUDDY**
+**BudgetBuddy is a comprehensive web application designed to empower individuals to manage their finances effectively.** 
 
-Key Features :
+**Key Features :**
 - Expense Tracking: Record and monitor your daily expenses with ease.
 - Income Tracking: Record and monitor your income sources.
 - Daily Reports: Generate detailed Expense and Income reports with Total Balance.
 
 
-Requirements :
+**Requirements :**
 - Flask>=2.0.0
 - pytest==6.2.4
 - Werkzeug>=2.0
 - flask-mysqldb
 - apscheduler
 
-CI : Github Action
+**CI : Github Action**
 ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/dc790f1e-332f-46f8-90fa-f91c3cc94324)
 
 
-CD : Docker
+**CD : Docker**
 ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/8492baa9-7371-4a70-a4de-392ef67288ef)
 
 
-Cloud : Google Cloud Project
+**Cloud : Google Cloud Project**
 ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/73520e7f-b2da-4a11-8a34-587123aba0be)
 
-Database : MySQL PHPmyadmin
+**Database : MySQL PHPmyadmin**
 
 ![image](https://github.com/campinwa/budgetbuddy/assets/166111616/16245329-8bf2-490d-8701-eac4a0efaa65)
 
@@ -108,7 +109,8 @@ $ docker push <username>/income-expense-app
 
 ```
 
-Project Timeline:
+**Project Timeline:**
+
 
 Week 1 : 28 Mei-31 Mei
 
